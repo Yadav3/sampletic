@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ray_top"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_ground"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/lay1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.82"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/order_no_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/Order_number"
+                android:textColor="@color/input_box_hint"
+                android:textSize="12dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/order_no_txt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="97DG"
+                android:textColor="@color/order_typ"
+                android:textSize="@dimen/tab_very_small_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.92"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/points_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Quantity"
+                android:textColor="@color/input_box_hint"
+                android:textSize="12dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/points_txt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/points"
+                android:textColor="@color/order_typ"
+                android:textSize="@dimen/tab_very_small_size" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/contant_txt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.8"
+            android:lineSpacingExtra="3dp"
+            android:maxLines="2"
+            android:text="Beams Seat Belt Hardware Mounting Kit for 2 Plint Non-Retractable Seat Belts"
+            android:textColor="@color/decription"
+            android:textSize="@dimen/tab_very_small_size" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.78"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <TextView
+                android:id="@+id/order_type__txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Product Number"
+                android:textColor="@color/input_box_hint"
+                android:textSize="12dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/order_type__txt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@color/order_typ"
+                android:textSize="@dimen/tab_very_small_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/liner_lay1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.92"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/date_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="-3dp"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/forgot_txt"
+                android:textSize="@dimen/tab_very_small_size" />
+
+            <TextView
+                android:id="@+id/date_txt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="-6dp"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/input_box_hint"
+                android:textSize="@dimen/tab_very_small_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_id"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.79"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tracking_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/tracking_number"
+                android:textColor="@color/order_typ"
+                android:textSize="14dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tracking_no1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="Shipped directly from Manufacturer-no tracking available."
+                android:textColor="@color/input_box_hint"
+                android:textSize="@dimen/tab_very_small_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_id1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.9"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/helt_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/help"
+                android:textColor="@color/order_typ"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/helt_txt1"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/help_1"
+                android:gravity="center"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

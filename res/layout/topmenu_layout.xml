@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+     >
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/button_shape_menu"
+    >
+    
+         <TextView
+            android:id="@+id/tv_sun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#5a6572"
+            android:gravity="center_horizontal"
+            android:layout_gravity="bottom"
+            android:textSize="16dp"
+            android:text="Sun"
+            android:layout_weight="1"
+            android:textStyle="bold" />
+
+
+
+         <TextView
+            android:id="@+id/tv_sun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#5a6572"
+            android:gravity="center_horizontal"
+            android:layout_gravity="bottom"
+           android:textSize="16dp"
+            android:text="Mon"
+            android:layout_weight="1"
+            android:textStyle="bold" />
+          
+          <TextView
+            android:id="@+id/tv_sun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#5a6572"
+            android:gravity="center_horizontal"
+            android:layout_gravity="bottom"
+            android:textSize="16dp"
+            android:text="Tue"
+            android:layout_weight="1"
+            android:textStyle="bold" />
+           
+         <TextView
+            android:id="@+id/tv_sun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#5a6572"
+            android:gravity="center_horizontal"
+            android:layout_gravity="bottom"
+           android:textSize="16dp"
+            android:text="Wed"
+            android:layout_weight="1"
+            android:textStyle="bold" />
+            
+           <TextView
+            android:id="@+id/tv_sun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#5a6572"
+            android:gravity="center_horizontal"
+            android:layout_gravity="bottom"
+            android:textSize="16dp"
+            android:text="Thu"
+            android:layout_weight="1"
+            android:textStyle="bold" />
+            
+            
+           <TextView
+            android:id="@+id/tv_sun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#5a6572"
+            android:gravity="center_horizontal"
+            android:layout_gravity="bottom"
+            android:textSize="16dp"
+            android:text="Fri"
+            android:layout_weight="1"
+            android:textStyle="bold" />
+            
+           <TextView
+            android:id="@+id/tv_sun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#5a6572"
+            android:gravity="center_horizontal"
+            android:layout_gravity="bottom"
+            android:textSize="16dp"
+            android:text="Sat"
+            android:layout_weight="1"
+            android:textStyle="bold" />
+        
+    </LinearLayout>
+
+</RelativeLayout>

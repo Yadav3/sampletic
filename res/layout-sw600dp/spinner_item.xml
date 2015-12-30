@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TextView  
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:textSize="@dimen/tab_very_small_size"
+       android:id="@+id/id_tit"
+    android:textColor="@color/input_box_hint"               
+    android:background="@color/back_ground" 
+    android:padding="15dp"
+    />

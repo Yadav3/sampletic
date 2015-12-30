@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+      android:background="@color/back_ground"
+    android:orientation="vertical" >
+     <Button
+            android:id="@+id/btn_bak"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/down_arrow"
+            android:background="@null"
+            android:drawablePadding="10dp"
+            android:gravity="left|center_vertical"
+            android:minHeight="0dip"
+            android:padding="21dp"
+            android:textAllCaps="false"
+            android:paddingLeft="10dp"
+            android:focusable="true"
+        android:focusableInTouchMode="true"
+            android:text="@string/back"
+            android:textColor="@color/headers_txt_title"
+            android:textSize="@dimen/tab_medium_size" />
+    
+    <View
+              
+              android:id="@+id/lin"  android:layout_width="fill_parent"
+                  android:layout_below="@+id/btn_bak"
+                android:layout_height="1dp"
+                 android:layout_marginTop="5dp"
+                 android:layout_marginBottom="30dp"
+                android:background="@color/line" />
+  <LinearLayout
+        android:id="@+id/liner_lay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lin"
+        android:background="@color/back_ground"
+        android:orientation="vertical" >
+
+
+        <TextView
+            android:id="@+id/engTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableLeft="@drawable/check_unselect"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical|left"
+            android:padding="15dp"
+            android:text="@string/gift"
+            android:layout_marginTop="25dp"
+              android:textColor="@color/input_box_hint"
+            android:layout_marginBottom="25dp"
+            android:textSize="@dimen/tab_small_size" />
+ <LinearLayout
+        android:id="@+id/liner_lay1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/back_ground"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical" >
+        <TextView
+            android:id="@+id/txt_nam1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/dec"
+              android:layout_marginBottom="30dp"
+            android:textColor="#195ca3"
+            android:textSize="@dimen/tab_very_small_size" 
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_select"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/lay"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rect_grey"
+            android:drawableRight="@drawable/button_arrow"
+            android:padding="15dp"
+              android:layout_marginBottom="30dp"
+            android:text="@string/preference"
+            android:textColor="@color/input_box_hint"
+            android:textSize="@dimen/tab_very_small_size" 
+            />
+
+        <TextView
+            android:id="@+id/txt_nam2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:padding="1dp"
+            android:text="@string/dec1"
+              android:layout_marginBottom="30dp"
+            android:textColor="#195ca3"
+           android:textSize="@dimen/tab_very_small_size" 
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_select2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/lay"
+            android:layout_centerVertical="true"
+              android:layout_marginBottom="10dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rect_grey"
+            android:drawableRight="@drawable/button_arrow"
+            android:padding="15dp"
+            android:text="@string/preference"
+            android:textColor="@color/input_box_hint"
+            android:textSize="@dimen/tab_very_small_size"  />
+         </LinearLayout>
+    </LinearLayout>
+<RelativeLayout
+        android:id="@+id/rrr"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="45dp"
+       android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/sign_txt"
+        >
+ <LinearLayout
+     android:layout_width="wrap_content"
+      android:id="@+id/rrr_lll"
+      android:orientation="vertical"
+       android:layout_marginLeft="10dp"
+       android:layout_centerVertical="true"
+            android:layout_height="wrap_content">
+     <TextView
+            android:id="@+id/total_points_txt_Tax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="false"
+            android:layout_centerVertical="false"
+            android:text="Taxes: 0"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tab_small_size" />
+        <TextView
+            android:id="@+id/total_points_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/total_points_txt_Tax"
+            android:drawablePadding="15dp"
+            android:text="Total Points :"
+            android:layout_marginBottom="3dp"
+            android:textColor="@color/white"
+             android:textSize="@dimen/tab_small_size"  />
+     
+ </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/continue_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="false"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="false"
+            android:drawablePadding="15dp"
+            android:layout_marginRight="10dp"
+            android:drawableRight="@drawable/submit"
+            android:gravity="center_vertical"
+            android:text="@string/continues"
+            android:textColor="@color/white"
+             android:textSize="@dimen/tab_small_size"  />
+    </RelativeLayout>
+
+</RelativeLayout>

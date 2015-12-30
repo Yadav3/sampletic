@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_ground"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/lay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include layout="@layout/header" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tv_r_lay"
+            android:layout_below="@+id/lay"
+        android:background="@color/bottom_border"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/tv_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:text="@string/points_in_cart"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="1dp"
+            android:layout_height="25dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:visibility="gone"
+            android:background="@color/white"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/tv_txt23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/tv_txt"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"
+            android:textSize="12dp" />
+        <TextView
+            android:id="@+id/delete_icon"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/delete"
+            android:layout_marginTop="1dp"
+            android:gravity="center_vertical"
+            android:textSize="12dp" />
+
+        <Button
+            android:id="@+id/cart_clear"
+            android:layout_width="45dp"
+            android:layout_height="fill_parent"
+            android:background="@android:color/transparent"
+            android:layout_alignParentRight="true"
+            android:text="" />
+
+    </RelativeLayout>
+
+
+    <ListView
+        android:id="@+id/carts_list"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/tv_r_lay"
+        android:background="@color/back_ground"
+        android:divider="@color/black"
+       android:layout_above="@+id/rrr333"
+        android:dividerHeight="0.3dp"
+        android:padding="5dp" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/crtLay"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/rrr"
+        android:layout_below="@+id/tv_r_lay"
+        android:background="@color/back_ground"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:visibility="gone" >
+</LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rrr333"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/sign_txt"
+        >
+
+
+        <TextView
+            android:id="@+id/continue_txtS"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="false"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="false"
+            android:layout_marginRight="10dp"
+            android:drawablePadding="15dp"
+            android:drawableRight="@drawable/submit"
+            android:gravity="center_vertical"
+            android:text="@string/continues"
+            android:textColor="@color/white"
+            android:textSize="@dimen/button_height1" />
+    </RelativeLayout>
+
+<LinearLayout
+    android:id="@+id/menlayout_cart"
+    android:layout_width="160dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="55dp"
+    android:orientation="vertical"
+    android:visibility="gone" >
+</LinearLayout>
+    
+</RelativeLayout>

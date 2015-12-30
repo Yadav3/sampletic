@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="whats_row">#EBFAFF</color>
+    <color name="black">#000000</color>
+    <color name="decription">#2C5DB0</color>
+    <color name="order_typ">#0E306B</color>
+    <color name="back_ground">#ffffff</color>
+    <color name="back_ground1">#e4eaee</color>
+    <color name="bottom_border">#313131</color>
+    <color name="blue">#002663</color>
+    <color name="transparent">#00000000</color>
+    <!-- #0E46A5 -->
+    <color name="light_green">#6ea946</color>
+    <color name="green">#016c36</color>
+    <color name="actionbar_bg">#2b5498</color>
+    <color name="drawer_bg">#424242</color>
+    <color name="menu_divider">#535353</color>
+    <color name="hash">#5A5C5C</color>
+    <color name="hint_clr">#797979</color>
+    <color name="dark_hash">#545454</color>
+    <color name="bg_offwhite">#f0f0f0</color>
+    <color name="hash_btn">#505050</color>
+    <color name="year">#012663</color>
+    <color name="line">#DCDCDC</color>
+    <color name="red">#c70c2a</color>
+    <color name="white">#ffffff</color>
+    <color name="read_morebg">#f2f2f2 </color>
+    <color name="divider">#d9d9d9</color>
+    <color name="alert_divider">#30b3e4</color>
+    <color name="menu_text">#bebebf</color>
+    <color name="background_tab_pressed">#6633B5E5</color>
+    <color name="order_bg">#dadada</color>
+    <color name="list_view_bg">#BDBDBD</color>
+    <color name="slide_bg">#4f4f4f</color>
+    <color name="form_field">#d8d8d8</color>
+    <color name="hidden">#D1D1D1</color>
+    <color name="list_item_title">#6D6F8C</color>
+    <color name="list_background">#ffffff</color>
+    <color name="list_background_pressed">#fff</color>
+    <color name="list_divider">#d3d3d3</color>
+    <color name="counter_text_bg">#626262</color>
+    <color name="counter_text_color">#c5c4c4</color>
+    <color name="sign_txt">#002663</color>
+ <!-- #1D5DA7 -->
+    <color name="input_box_hint">#787878</color>
+    <color name="forgot_txt">#a2a2a2</color>
+    <color name="dash_borad_txt">#124a95</color>
+    <color name="headers_txt_title">#596B8E</color>
+    <color name="home_lables">#D97A23</color>
+    <color name="orange">#ecae00</color>
+     
+
+</resources>

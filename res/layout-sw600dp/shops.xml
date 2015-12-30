@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_ground"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/lay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <include layout="@layout/header" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rr_cart_menu1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lay"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:background="@color/whats_row"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/text_View1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="6dp"
+            android:gravity="center_vertical"
+            android:text="@string/whats_hot"
+            android:textColor="@color/red"
+            android:textSize="@dimen/button_height1" />
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/tab_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp" >
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/categoty_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/lay"
+        android:layout_margin="6dp"
+        android:gravity="center_vertical"
+        android:text="@string/category_menu"
+        android:textColor="@color/red"
+        android:textSize="@dimen/button_height1"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/lin"
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:layout_below="@+id/categoty_menu"
+        android:layout_marginTop="5dp"
+        android:background="@color/line"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/shops_list"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/lin"
+        android:background="@color/back_ground"
+        android:divider="@color/line"
+        android:dividerHeight="0.5dp"
+        android:visibility="gone" >
+    </ListView>
+    <ScrollView
+        android:id="@+id/top_scr"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/lay"
+        android:background="@color/back_ground"
+        android:layout_above="@+id/rrr_category"
+        android:fillViewport="false"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/lin_scr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/back_ground"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout
+        android:id="@+id/rrr_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bottom_border"
+        android:padding="12dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:text="@string/points_in_cart"
+             android:textSize="@dimen/tab_small_size" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="1dp"
+            android:layout_height="29dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:visibility="visible"
+            android:background="@color/white"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+          android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tab_small_size" />
+       
+
+    </RelativeLayout>
+<LinearLayout
+    android:id="@+id/menlayout"
+    android:layout_width="160dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="67dp"
+    android:orientation="vertical"
+    android:visibility="gone" >
+</LinearLayout>
+</RelativeLayout>

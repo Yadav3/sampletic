@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_ground"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/bag3" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/rrr"
+        android:layout_below="@+id/imageView1"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="3" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <LinearLayout
+                android:id="@+id/home_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_bg"
+                android:padding="2dp"
+                android:visibility="visible" >
+
+                <TextView
+                    android:id="@+id/leave_mng_txt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/app_name"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@drawable/home"
+                    android:gravity="center_horizontal|center_horizontal"
+                    android:text="@string/home"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/dash_board"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/whats_hot_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_bg"
+                android:padding="2dp" >
+
+                <TextView
+                    android:id="@+id/prd_mng_txt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/app_name"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@drawable/new_wish_list"
+                    android:gravity="center_horizontal|center_horizontal"
+                    android:text="@string/whats_hot"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/dash_board"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/wish_list_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_bg"
+                android:padding="2dp"
+                android:visibility="visible" >
+
+                <TextView
+                    android:id="@+id/leave_mng_txt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/app_name"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@drawable/wish_list"
+                    android:gravity="center_horizontal|center_horizontal"
+                    android:text="@string/wish_list"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/dash_board"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/my_account_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_bg"
+                android:padding="2dp" >
+
+                <TextView
+                    android:id="@+id/hrd_mgmt_txt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/app_name"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@drawable/my_account"
+                    android:gravity="center_horizontal|center_horizontal"
+                    android:text="@string/my_account"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/dash_board"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <LinearLayout
+                android:id="@+id/carts_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_bg"
+                android:padding="2dp"
+                android:visibility="visible" >
+
+                <TextView
+                    android:id="@+id/leave_mng_txt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/app_name"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@drawable/cardashboard_cart"
+                    android:gravity="center_horizontal|center_horizontal"
+                    android:text="@string/cart"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/dash_board"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/shops_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_bg"
+                android:padding="2dp" >
+
+                <TextView
+                    android:id="@+id/hrd_mgmt_txt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/app_name"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@drawable/shop"
+                    android:gravity="center_horizontal|center_horizontal"
+                    android:text="@string/shop"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/dash_board"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rrr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/bottom_border"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            android:text="@string/points_in_cart"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:text="@string/points_left"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+</RelativeLayout>

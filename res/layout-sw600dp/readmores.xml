@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+  <Button
+            android:id="@+id/closeBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/cross"
+            android:background="@null"
+            android:drawablePadding="10dp"
+            android:paddingRight="10dp"
+            android:layout_gravity="center"
+            android:textAllCaps="false"
+            android:minHeight="0dip"
+            android:padding="15dp"
+            android:layout_marginBottom="10dp"
+            android:minWidth="0dip"
+            android:textColor="@color/headers_txt_title"
+            android:textSize="@dimen/button_height1" />
+    <ScrollView
+        android:id="@+id/ScrollView01"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/closeBtn"
+        android:layout_height="fill_parent"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayout06"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="10dp" >
+
+            <TextView
+                android:id="@+id/detail_tex"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="ggfsdgfsdgdfgsdfgsdfgsdfgsdfg"
+                android:textColor="#000000"
+                android:paddingBottom="30dp"
+                   android:lineSpacingExtra="10dp"
+                 android:textSize="@dimen/tab_small_size" >
+            </TextView>
+            
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

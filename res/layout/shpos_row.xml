@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/back_ground"
+    android:orientation="horizontal"
+     >
+<TextView
+        android:id="@+id/tv_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/tv_vie33"
+        android:layout_below="@+id/lay"
+        android:layout_centerVertical="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:padding="10dp"
+        android:text="@string/category_menu"
+        android:textColor="@color/black"
+        android:textSize="@dimen/button_height1" />
+    <TextView
+        android:id="@+id/tv_txtt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+         android:visibility="gone"
+        android:drawableRight="@drawable/category_menu_icon"
+        android:textColor="@color/drawer_bg"
+        android:textSize="@dimen/button_height1" />
+
+    
+    <TextView
+        android:id="@+id/tv_vie33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:drawableRight="@drawable/category_menu_icon"
+        android:paddingTop="15dp"
+        android:visibility="visible"
+         android:paddingRight="15dp"
+          android:paddingBottom="15dp"
+           android:paddingLeft="36dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/button_height1" />
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/transparent"
+         android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="" />
+    <TextView
+        android:id="@+id/tv_vie1"
+        android:layout_width="23dp"
+        android:layout_height="23dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="5dp"
+        android:text="33333"
+        android:textColor="@android:color/white"
+        android:visibility="invisible" />
+    <TextView
+        android:id="@+id/tv_vie2"
+        android:layout_width="23dp"
+        android:layout_height="23dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="343434"
+        android:paddingTop="5dp"
+        android:textColor="@android:color/white"
+        android:visibility="invisible" />
+    <View
+              
+              android:id="@+id/lin"  android:layout_width="fill_parent"
+                  android:layout_below="@+id/tv_txt"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/line" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+       android:layout_toLeftOf="@+id/button1"
+         />
+
+</RelativeLayout>

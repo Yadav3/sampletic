@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rrr_ttt"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/back_ground"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/lay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include layout="@layout/header" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/lin"
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:layout_below="@+id/lay"
+        android:layout_marginTop="5dp"
+        android:background="@color/line"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rrr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lay"
+        android:layout_marginTop="-6dp"
+        android:background="@color/bottom_border"
+        android:padding="12dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:text="@string/points_in_cart"
+            android:textSize="@dimen/tab_small_size" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="1dp"
+            android:layout_height="29dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/white"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tab_small_size" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/ScrollView03"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rrr"
+        android:layout_margin="10dp"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayout09"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
+                android:padding="5dp"
+                android:textSize="@dimen/tab_small_size" />
+
+            <RelativeLayout
+                android:id="@+id/t3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title"
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rect_grey"
+                android:padding="10dp" >
+
+                <ImageView
+                    android:id="@+id/img_wallet"
+                    android:layout_width="170dp"
+                    android:layout_height="140dp"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:src="@drawable/bag3" />
+
+                <ImageView
+                    android:id="@+id/add_to_wislist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="15dp"
+                    android:src="@drawable/my_favorites" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/l4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/t3"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    android:id="@+id/txt_pt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Points: "
+                    android:textColor="#d87822"
+                    android:textSize="@dimen/tab_small_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_ptval"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:text=""
+                    android:textSize="@dimen/tab_small_size"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/l5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/l4"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp" >
+
+                <TextView
+                    android:id="@+id/txt_pid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Product Id: "
+                    android:textColor="#d87822"
+                    android:textSize="@dimen/tab_small_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_pidval"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:text=""
+                    android:textSize="@dimen/tab_small_size" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_body"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/l5"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textSize="@dimen/tab_small_size" />
+
+            <TextView
+                android:id="@+id/txt_redmore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/txt_body"
+                android:layout_gravity="right"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="-5dp"
+                android:maxLines="1"
+                android:padding="12dp"
+                android:text="@string/readmore"
+                android:textColor="#EA2828"
+                android:textSize="@dimen/tab_small_size" />
+
+            <LinearLayout
+                android:id="@+id/lll_Fit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/tv_select"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:ellipsize="end"
+                    android:gravity="center|center_horizontal"
+                    android:singleLine="true"
+                    android:text="SELECT"
+                    android:textColor="@color/input_box_hint"
+                    android:textSize="@dimen/tab_small_size" />
+
+                <TextView
+                    android:id="@+id/tv_select1"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_brder_white_bg"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@drawable/downs_arrow"
+                    android:ellipsize="end"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:text="Please select a Fit..."
+                    android:textColor="#002661"
+                    android:textSize="@dimen/tab_very_small_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lll_Color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/tv_select2"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:ellipsize="end"
+                    android:gravity="center|center_horizontal"
+                    android:singleLine="true"
+                    android:text="SELECT"
+                    android:textColor="@color/input_box_hint"
+                    android:textSize="@dimen/tab_small_size" />
+
+                <TextView
+                    android:id="@+id/tv_select3"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_brder_white_bg"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@drawable/downs_arrow"
+                    android:ellipsize="end"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:text="Please select a Color..."
+                    android:textColor="#002661"
+                    android:textSize="@dimen/tab_very_small_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lll_Size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/tv_select4"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:ellipsize="end"
+                    android:gravity="center|center_horizontal"
+                    android:singleLine="true"
+                    android:text="SELECT"
+                    android:textColor="@color/input_box_hint"
+                    android:textSize="@dimen/tab_small_size" />
+
+                <TextView
+                    android:id="@+id/tv_select5"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_brder_white_bg"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@drawable/downs_arrow"
+                    android:ellipsize="end"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:text="Please select a Size..."
+                    android:textColor="#002661"
+                    android:textSize="@dimen/tab_very_small_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lll_select4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/tv_select6"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:ellipsize="end"
+                    android:gravity="center|center_horizontal"
+                    android:singleLine="true"
+                    android:text="SELECT"
+                    android:textColor="@color/input_box_hint"
+                    android:textSize="@dimen/tab_small_size" />
+
+                <TextView
+                    android:id="@+id/tv_select7"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_brder_white_bg"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@drawable/downs_arrow"
+                    android:ellipsize="end"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:text="select"
+                    android:textColor="#002661"
+                    android:textSize="@dimen/tab_very_small_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lll_select5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/tv_select8"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:ellipsize="end"
+                    android:gravity="center|center_horizontal"
+                    android:singleLine="true"
+                    android:text="SELECT"
+                    android:textColor="@color/input_box_hint"
+                    android:textSize="@dimen/tab_small_size" />
+
+                <TextView
+                    android:id="@+id/tv_select9"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_brder_white_bg"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@drawable/downs_arrow"
+                    android:ellipsize="end"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:text="select"
+                    android:textColor="#002661"
+                    android:textSize="@dimen/tab_very_small_size" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/reset_txt"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center|center_horizontal"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:text="reset selection"
+                android:textColor="@color/input_box_hint"
+                android:textSize="@dimen/tab_small_size"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/liner_layout"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:layout_below="@+id/rrr"
+                android:background="@color/back_ground"
+                android:orientation="vertical"
+                android:visibility="invisible" >
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/bottom_rel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true" >
+
+
+        <LinearLayout
+            android:id="@+id/rel2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rect_grey"
+            android:padding="1dp" >
+
+            <TextView
+                android:id="@+id/txt_qty"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.8"
+                android:background="#efefef"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="QTY"
+                android:textSize="@dimen/tab_small_size" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.8"
+                android:background="#efefef"
+                android:orientation="horizontal"
+                android:paddingBottom="2dp" >
+
+                <EditText
+                    android:id="@+id/txt_cnt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|left"
+                    android:background="@drawable/rect_grey"
+                    android:gravity="center"
+                    android:imeOptions="actionDone"
+                    android:maxLength="3"
+                    android:singleLine="true"
+                    android:paddingBottom="7dp"
+                    android:paddingLeft="21dp"
+                    android:digits="0123456789"
+                    android:paddingRight="21dp"
+                    android:paddingTop="7dp"
+                    android:text="1"
+                    android:textSize="@dimen/tab_small_size" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/add_to_cart"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:background="@color/sign_txt"
+                android:drawableLeft="@drawable/add_to_cart"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:padding="17dp"
+                android:text="Add to Cart"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/tab_small_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/menlayout_det"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="67dp"
+        android:orientation="vertical"
+        android:visibility="gone" >
+    </LinearLayout>
+
+</RelativeLayout>

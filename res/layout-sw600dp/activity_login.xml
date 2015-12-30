@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+      android:background="@color/back_ground"
+       android:focusable="true"
+        android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:weightSum="1" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight=".65"
+            android:gravity="center" >
+
+           
+
+            <ImageView
+                android:id="@+id/imageLogo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/bag3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight=".35"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textMiddle" >
+
+                <EditText
+                    android:id="@+id/editEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edttxt_border"
+                    android:drawableLeft="@drawable/useri"
+                    android:drawablePadding="10dp"
+                    android:hint="@string/username"
+                    android:inputType="textEmailAddress"
+                    android:padding="15dp"
+                    android:layout_marginBottom="35dp"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true"
+                    android:textColor="@color/input_box_hint"
+                    android:textSize="@dimen/tab_medium_size" />
+
+                <EditText
+                    android:id="@+id/editPassword"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/editEmail"
+                   android:layout_marginBottom="35dp"
+                    android:background="@drawable/edttxt_border"
+                    android:drawableLeft="@drawable/password"
+                    android:drawablePadding="10dp"
+                    android:hint="@string/pwd"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:textColor="@color/input_box_hint"
+                    android:textSize="@dimen/tab_medium_size" />
+
+                <Button
+                    android:id="@+id/signin_btn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/editPassword"
+                   android:layout_marginBottom="25dp"
+                    android:background="@drawable/green_border"
+                    android:padding="8dp"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/sign_in"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/tab_medium_size"
+                    android:textStyle="bold" />
+                <TextView
+        android:id="@+id/txt_forgot_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signin_btn"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="15dp"
+        android:text="@string/forgot_pwd"
+        android:textColor="@color/forgot_txt"
+        android:textSize="@dimen/tab_medium_size" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    
+
+</RelativeLayout>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rr_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rect_grey" >
+
+    <RelativeLayout
+        android:id="@+id/rr_top"
+        android:layout_width="match_parent"
+        android:background="@color/back_ground"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/iv_label"
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:layout_alignParentLeft="true"
+            android:contentDescription="@string/app_name"
+            android:padding="5dp"
+            android:scaleType="fitXY"
+             />
+
+        <TextView
+            android:id="@+id/tv_label_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:layout_toLeftOf="@+id/rr_close"
+            android:layout_toRightOf="@+id/iv_label"
+           android:maxLines="3"
+           android:layout_marginLeft="5dp"
+           android:ellipsize="end"
+            android:text="Cinda b Pocket Wallet - Ravinia Black"
+            android:textColor="#274174"
+            android:textSize="@dimen/tab_small_size" />
+
+        <RelativeLayout
+            android:id="@+id/rr_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            >
+
+            <TextView
+                android:id="@+id/tv_close"
+                android:layout_width="15dp"
+                android:paddingTop="5dp"
+                android:layout_height="15dp"
+                android:background="@drawable/cross" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rr_top"
+        android:orientation="horizontal"
+        android:layout_marginTop="-5dp"
+        android:background="@color/back_ground"
+        android:weightSum="3" >
+
+        <LinearLayout
+            android:id="@+id/ll_unit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="2dp" >
+
+            <TextView
+                android:id="@+id/tv_unit_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text=""
+                android:textColor="#002661"
+                android:textSize="@dimen/large_size" />
+
+            <TextView
+                android:id="@+id/tv_unit_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|center_horizontal"
+                android:text="Points per Unit"
+                android:textColor="@color/input_box_hint"
+                android:paddingBottom="5dp"
+                android:textSize="@dimen/tab_very_small_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_qty"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+             >
+
+            <TextView
+                android:id="@+id/tv_qty_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_brder_white_bg"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/category_menu_icon_down"
+                android:padding="10dp"
+                android:text=""
+                android:textColor="#002661"
+                android:textSize="@dimen/tab_very_small_size" />
+
+            <TextView
+                android:id="@+id/tv_qty_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|center_horizontal"
+                android:text="Select Qty."
+                android:textColor="@color/input_box_hint"
+                 android:paddingBottom="5dp"
+                 android:layout_marginTop="5dp"
+                android:textSize="@dimen/tab_very_small_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_subtotal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="2dp" >
+
+            <TextView
+                android:id="@+id/tv_subtotal_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text=""
+                android:textColor="#002661"
+                android:textSize="@dimen/large_size" />
+
+            <TextView
+                android:id="@+id/tv_subtotal_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|center_horizontal"
+                android:text="Sub-Total"
+               android:textColor="@color/input_box_hint"
+                 android:paddingBottom="5dp"
+                android:textSize="@dimen/tab_very_small_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

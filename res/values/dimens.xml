@@ -1,0 +1,36 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- mobile font sizes. -->
+    
+    <dimen name="header1">18sp</dimen>
+    <dimen name="button_height">16dp</dimen>
+    <dimen name="button_height1">14dp</dimen>
+     <dimen name="dash_board">14dp</dimen>
+    <dimen name="top_size">50dp</dimen>
+   
+    <dimen name="very_small_size">10dp</dimen>
+    <dimen name="small_size">12dp</dimen>
+    <dimen name="medium_size">14dp</dimen>
+    <dimen name="big_size">16dp</dimen>
+    <dimen name="large_size">18dp</dimen>
+    <dimen name="title_size">24dp</dimen>
+
+    <!-- tablet font sizes. -->
+    
+    <dimen name="tab_very_small_size">14dp</dimen>
+    <dimen name="tab_small_size">17dp</dimen>
+    <dimen name="tab_medium_size">20dp</dimen>
+     <dimen name="tab_big_size">25dp</dimen>
+      <dimen name="tab_big_size1">23dp</dimen>
+    <dimen name="tab_dash_borad">21dp</dimen>
+    <dimen name="tab_header1">20dp</dimen>
+    <dimen name="tab_button_height">18dp</dimen>
+    <dimen name="tab_button_height1">16dp</dimen>
+    <dimen name="tab_top_size">60dp</dimen>
+
+</resources>

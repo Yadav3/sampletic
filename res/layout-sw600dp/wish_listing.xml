@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/top_ray"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_ground"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/lay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include layout="@layout/header" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/lin"
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:layout_below="@+id/lay"
+        android:layout_marginTop="5dp"
+        android:background="@color/line"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/top_ray1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lay"
+        android:background="@color/back_ground" >
+
+        <TextView
+            android:id="@+id/txt_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rect_grey"
+            android:padding="5dp"
+            android:text="@string/clear"
+            android:visibility="gone" />
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/rrr_wis"
+        android:layout_marginTop="-6dp"
+            android:layout_below="@+id/lay"
+        android:background="@color/bottom_border"
+        android:padding="3dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_alignParentLeft="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:text="@string/points_in_cart"
+            android:textSize="@dimen/tab_small_size"  />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="1dp"
+            android:layout_height="29dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:visibility="gone"
+            android:background="@color/white"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="25dp"
+            android:layout_toRightOf="@+id/textView1"
+              android:layout_marginTop="15dp"
+            android:textColor="@color/white"
+             android:layout_marginRight="5dp"
+               android:textSize="@dimen/tab_small_size" 
+            android:gravity="center" />
+        <TextView
+            android:id="@+id/w_delete_icon"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="9dp"
+             android:layout_marginRight="12dp"
+            android:background="@drawable/delete"
+            android:gravity="center"
+            />
+
+        <Button
+            android:id="@+id/wishL_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:background="@android:color/transparent"
+            android:layout_alignParentRight="true"
+            android:text="" />
+
+    </RelativeLayout>
+        <ListView
+            android:id="@+id/wishlist"
+            android:layout_below="@+id/rrr_wis"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/back_ground"
+            android:dividerHeight="1dp" />
+    </RelativeLayout>
+<LinearLayout
+    android:id="@+id/menlayout_wis"
+    android:layout_width="160dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="67dp"
+    android:orientation="vertical"
+    android:visibility="gone" >
+</LinearLayout>
+</RelativeLayout>

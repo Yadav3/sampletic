@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ray_top"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/back_ground"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="21dp"
+        android:paddingTop="21dp" >
+
+        <LinearLayout
+            android:id="@+id/liner_lay1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.92"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/date_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="-3dp"
+                android:gravity="center"
+                android:text="25"
+                android:textColor="@color/forgot_txt"
+                android:textSize="@dimen/small_size" />
+
+            <TextView
+                android:id="@+id/date_txt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-3dp"
+                android:gravity="center"
+                android:text="JULY"
+                android:textColor="@color/input_box_hint"
+                android:textSize="@dimen/small_size" />
+        </LinearLayout>
+        
+         <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.87"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/order_type__txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/Order_type"
+                android:textColor="@color/input_box_hint"
+                android:textSize="12dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/order_type__txt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/Order_type"
+                android:textSize="@dimen/small_size"
+                android:visibility="visible" />
+        </LinearLayout>
+        
+                 <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.9"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/points_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/points"
+                android:textColor="@color/input_box_hint"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/points_txt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/points"
+                android:textColor="@color/order_typ"
+                android:textSize="@dimen/small_size"
+                android:visibility="visible" />
+        </LinearLayout>
+        
+                         <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.85"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/order_no_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/Order_number"
+                android:textColor="@color/input_box_hint"
+                android:textSize="12dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/order_no_txt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="97DG"
+                android:textColor="@color/order_typ"
+                android:textSize="@dimen/small_size" />
+        </LinearLayout>
+        
+
+        <TextView
+            android:id="@+id/contant_txt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.7"
+            android:maxLines="2"
+            android:text="Beams Seat Belt Hardware Mounting Kit for 2 Plint Non-Retractable Seat Belts"
+            android:textColor="@color/decription"
+            android:textSize="@dimen/small_size" />
+
+
+
+
+
+       
+        <EditText
+            android:id="@+id/comments_txt1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/ttt"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/input_bgs"
+            android:focusable="false"
+            android:hint="@string/comments"
+            android:inputType="textCapSentences"
+            android:maxLines="3"
+            android:paddingLeft="10dp"
+            android:textSize="14sp"
+            android:visibility="gone" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/comments_txt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.75"
+            android:maxLines="2"
+            android:text="Beams Seat Belt Hardware Mounting Kit for 2 Plint Non-Retractable Seat Belts"
+            android:textColor="@color/decription"
+            android:textSize="@dimen/small_size" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/lin"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/lay"
+        android:layout_marginTop="10dp"
+        android:background="@color/line"
+        android:visibility="gone" />
+
+</RelativeLayout>
